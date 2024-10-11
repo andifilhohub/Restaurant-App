@@ -1,0 +1,126 @@
+.swipe-card {
+    display: flex; /* Exibe os elementos lado a lado */
+    width: 100%; /* Largura total do card */
+    height: 800px; /* Altura total do card */
+    margin: 0 auto; /* Centraliza o card na página */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+    overflow: hidden; /* Esconde o excesso de conteúdo */
+    position: relative; /* Para posicionamento dos elementos */
+    background: white; /* Fundo branco */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .image-container {
+    flex: 1; /* Ocupa 50% da largura do card */
+    position: relative; /* Para posicionar a sobreposição */
+  }
+  
+  .restaurant-image {
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    height: 100%; /* Ocupa toda a altura do contêiner */
+    object-fit: cover; /* Cobre o espaço sem distorcer a imagem */
+  }
+  
+  .arrow-container {
+    position: absolute; /* Posiciona as setas sobre a imagem */
+    bottom: 10px; /* Distância do fundo */
+    left: 50%; /* Centraliza as setas */
+    transform: translateX(-50%); /* Ajusta a centralização */
+    display: flex; /* Exibe as setas lado a lado */
+  }
+  
+  .arrow-button {
+    background: rgba(255, 255, 255, 0.5); /* Fundo semi-transparente */
+    border: none; /* Remove borda */
+    border-radius: 50%; /* Botões redondos */
+    font-size: 30px; /* Tamanho da fonte das setas */
+    color: #333; /* Cor das setas */
+    margin: 0 10px; /* Espaçamento entre as setas */
+    cursor: pointer; /* Muda o cursor para pointer */
+    padding: 10px; /* Espaçamento interno */
+    transition: background 0.3s; /* Transição suave */
+  }
+  
+  .arrow-button:hover {
+    background: rgba(255, 255, 255, 0.8); /* Efeito hover */
+  }
+  
+  .info-container {
+    flex: 1; /* Ocupa 50% da largura do card */
+    padding: 20px; /* Espaçamento interno */
+    background: #f8f9fa; /* Fundo cinza claro */
+    overflow-y: auto; /* Permite rolagem vertical se necessário */
+  }
+  
+  .section {
+    margin-bottom: 20px; /* Espaçamento entre seções */
+    padding-bottom: 10px; /* Espaçamento abaixo da seção */
+    border-bottom: 1px solid #eaeaea; /* Borda inferior */
+  }
+  
+  h2, h3 {
+    color: #333; /* Cor dos títulos */
+    margin: 10px 0; /* Margem superior e inferior */
+  }
+  
+  .restaurant-name {
+    font-size: 24px; /* Tamanho da fonte do nome */
+  }
+  
+  .restaurant-description {
+    color: #555; /* Cor do texto da descrição */
+  }
+  
+  .restaurant-address,
+  .restaurant-distance,
+  .restaurant-music {
+    margin: 5px 0; /* Espaçamento entre as linhas */
+    color: #777; /* Cor do texto das informações */
+  }
+  
+  .menu-list {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding */
+  }
+  
+  .menu-item {
+    margin: 5px 0; /* Espaçamento entre os itens do menu */
+    color: #333; /* Cor do texto do menu */
+  }
+  
+  .action-buttons {
+    display: flex; /* Exibe os botões lado a lado */
+   justify-content: center;
+    padding-top: 20px; /* Espaçamento acima dos botões */
+
+  }
+  
+  .like-button,
+  .dislike-button {
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    color: white; /* Cor do texto */
+    padding: 50px; /* Espaçamento interno */
+    cursor: pointer; /* Muda o cursor para pointer */
+    transition: background 0.3s; /* Transição suave */
+    margin: 30px;
+  }
+  
+  .like-button {
+    background: #28a745; /* Cor do botão de like */
+  }
+  
+  .dislike-button {
+    background: #dc3545; /* Cor do botão de dislike */
+  }
+  
+  .like-button:hover {
+    background: #218838; /* Efeito hover do like */
+  }
+  
+  .dislike-button:hover {
+    background: #c82333; /* Efeito hover do dislike */
+  }
+  

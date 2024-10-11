@@ -1,0 +1,98 @@
+.sidebar {
+  width: 500px; /* Largura da sidebar */
+  background-color: #fff; /* Cor de fundo da sidebar */
+  border-right: 1px solid #ddd; /* Borda direita */
+}
+.user-avatar {
+  padding: 10px;
+  width: 80px;  /* Ajuste para o tamanho desejado */
+  height: 80px; /* Ajuste para o tamanho desejado */
+  object-fit: cover; /* Isso mantém a proporção da imagem ao cortá-la, se necessário */
+  border-radius: 80px;
+}
+
+
+ .user-header {
+  width: 100%; /* Ocupar 100% da largura da sidebar */
+  height: 100px;
+  background-color: #4c00b4; /* Cor de fundo para o cabeçalho do usuário */
+  padding: 0px; /* Padding para o cabeçalho */
+  display: flex;
+  align-items: center; /* Centralizar verticalmente */
+  justify-content: space-between; /* Espaçamento entre os itens */
+}
+
+.user-name {
+  color: #ddd; /* Cor do texto do nome */
+  margin-left: 10px; /* Espaço à esquerda do nome, ajuste conforme necessário */
+}
+
+.icon {
+  font-size: 40px; /* Tamanho do ícone */
+  color: #ddd; /* Cor do ícone */
+  margin-right: 10px; /* Espaço à direita do ícone */
+}
+.tabs {
+  display: flex; /* Alinhamento horizontal das abas */
+  margin: 20px 0; /* Espaçamento vertical */
+}
+
+.tab {
+  flex: 1; /* Cada aba ocupa um espaço igual */
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center; /* Centraliza o texto */
+  padding: 10px; /* Padding para as abas */
+  cursor: pointer; /* Cursor em forma de mão */
+}
+
+.tab.active {
+  border-bottom: 4px solid #4c00b4; /* Borda direita */
+
+  color: #000000; /* Cor do texto da aba ativa */
+}
+
+.liked-restaurants-container {
+  padding: 20px; /* Padding para o container dos restaurantes curtido   s */
+  max-height: 500px; /* Aumenta a altura máxima do container */
+  overflow-y: auto; /* Permite rolagem vertical quando necessário */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+.liked-restaurants {
+  display: flex; /* Usar flexbox para alinhar os restaurantes */
+  flex-wrap: wrap; /* Permite que os cartões quebrem para a linha seguinte */
+}
+
+.restaurant-card {
+  width: calc(33.33% - 10px); /* Largura para 3 cartões lado a lado com espaçamento */
+  margin: 5px; /* Margem entre os cartões */
+  text-align: center; /* Centraliza o texto */
+}
+
+.restaurant-card img {
+  width: 100%; /* Imagem ocupa 100% da largura do cartão */
+  border-radius: 5px; /* Bordas arredondadas para a imagem */
+  height: 100px; /* Define uma altura fixa para as imagens */
+  object-fit: cover; /* Faz a imagem cobrir o espaço do cartão */
+}
+.dashboard-container {
+  display: flex; /* Adiciona flexbox para organizar os componentes lado a lado */
+  height: 100vh; /* Preenche a altura total da tela */
+}
+
+.sidebar {
+ 
+  background-color: #fff; /* Cor de fundo da sidebar */
+
+  border-right: 1px solid #ddd; /* Borda direita */
+}
+
+.content {
+  flex-grow: 1; /* Faz o content ocupar o espaço restante */
+  display: flex; /* Pode ser necessário dependendo do layout que você deseja */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  background-color: #f9f9f9; /* Cor de fundo para o conteúdo */
+  overflow-y: auto; /* Permite rolagem vertical se o conteúdo for maior que a altura da tela */
+}

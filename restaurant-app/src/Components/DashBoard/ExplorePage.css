@@ -1,0 +1,16 @@
+.explore-container {
+  flex-grow: 1; /* Faz o explore-container ocupar o espaço restante */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9; /* Coloca um fundo claro */
+  position: relative;
+  overflow: hidden;
+}
+
+
+h2 {
+  color: #4c00b4;
+  text-align: center;
+  font-size: 24px; /* Aumenta o tamanho do texto quando não houver mais restaurantes */
+}
